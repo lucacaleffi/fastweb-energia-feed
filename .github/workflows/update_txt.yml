@@ -1,0 +1,31 @@
+name: Aggiorna TXT leggibile per GPT
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'listino_fastweb_view.html'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Installa html2text
+        run: sudo apt-get update && sudo apt-get install -y html2text
+
+      - name: Converte HTML in testo
+        run: |
+          echo "📄 Conversione HTML → TXT"
+          html2text -width 120 listino_fastweb_view.html > listino_fastweb.txt
+
+      - name: Commit e Push file TXT
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add listino_fastweb.txt
+          git commit -m "Auto-update TXT per GPT"
+          git push
