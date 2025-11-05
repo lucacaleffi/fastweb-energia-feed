@@ -1,0 +1,22 @@
+{
+  "ultimo_aggiornamento": "2025-11-05",
+  "PUN": 0.106,
+  "fonte_pun": "A2A",
+  "residenziale": {
+    "light": {
+      "€/mese": 35.0,
+      "€/kWh": 0.45
+    },
+    "full": {
+      "€/mese": 39.0,
+      "€/kWh": 0.41
+    }
+  },
+  "business": {
+    "flex": {
+      "PUN +": 0.037,
+      "€/mese": 20.0,
+      "sconto_convergenza": -10.0
+    }
+  }
+}
