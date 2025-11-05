@@ -17,7 +17,7 @@ footer { color:#666; font-size:13px; margin-top:20px; }
 Listino Fastweb Energia
 {
   "ultimo_aggiornamento": "2025-11-05",
-  "PUN": 0.106,
+  "PUN": 0.999,
   "fonte_pun": "A2A",
   "residenziale": {
     "light": {
@@ -42,4 +42,4 @@ Listino Fastweb Energia
 
 
 
-✅ Aggiornato automaticamente il 05/11/2025 – 15:49:12
+✅ Aggiornato automaticamente il 05/11/2025 – 16:03:19
