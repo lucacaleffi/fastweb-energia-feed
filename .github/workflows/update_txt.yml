@@ -1,39 +1,33 @@
 name: Aggiorna TXT leggibile per GPT
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
-    paths:
-      - 'listino_fastweb_view.html'
-
-permissions:
-  contents: write
+  schedule:
+    - cron: "0 14 * * *"  # Aggiornamento automatico ogni giorno alle 14:00 italiane
 
 jobs:
   convert:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Installa Python e libreria html2text
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip install html2text
+      - name: Configura Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
-      - name: Converte HTML in TXT
+      - name: Crea file TXT leggibile per GPT
         run: |
-          echo "📄 Conversione HTML → TXT tramite Python"
-          python3 - <<'PYCODE'
-          import html2text, io
-          with io.open("listino_fastweb_view.html", encoding="utf-8") as f:
-              html = f.read()
-          text = html2text.html2text(html)
-          with io.open("listino_fastweb.txt", "w", encoding="utf-8") as f:
-              f.write(text)
-          PYCODE
+          echo "📄 Generazione del listino Fastweb Energia (TXT)" > listino_fastweb.txt
+          echo "" >> listino_fastweb.txt
+          cat listino_fastweb_view.html | sed 's/<[^>]*>//g' >> listino_fastweb.txt
+          echo "" >> listino_fastweb.txt
+          echo "✅ Aggiornato automaticamente il $(date '+%d/%m/%Y – %H:%M:%S')" >> listino_fastweb.txt
 
       - name: Commit e Push file TXT
         env:
