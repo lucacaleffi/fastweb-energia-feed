@@ -1,0 +1,61 @@
+name: 🔄 Aggiorna feed Fastweb Energia
+
+on:
+  schedule:
+    - cron: "10 14 * * *"  # ogni giorno alle 14:10 (ora italiana)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup shell
+        run: |
+          echo "🔄 Avvio aggiornamento $(date)"
+
+      # (Opzionale) Prova a leggere il PUN dal GME e mettilo in un file di appoggio.
+      - name: 📈 Estrai PUN da GME (best-effort)
+        run: |
+          mkdir -p feed
+          curl -s https://www.mercatoelettrico.org/it-it/Home/Pubblicazioni/Indici-GME/PUNIndexGme \
+            | grep -Eo "[0-9]{1,3},[0-9]{1,3}" | head -1 > feed/pun_value.txt || echo "N/D" > feed/pun_value.txt
+          echo "PUN estratto: $(cat feed/pun_value.txt)"
+
+      - name: 🧠 Genera pagina HTML unificata
+        run: |
+          TZ=Europe/Rome
+          NOW="$(date +'%d/%m/%Y %H:%M')"
+          PUN="$(cat feed/pun_value.txt)"
+
+          echo "<html><head><meta charset='utf-8'><title>Listino Fastweb Energia</title></head><body>" > listino_fastweb_view.html
+          echo "<h2>Listino Fastweb Energia</h2>" >> listino_fastweb_view.html
+          echo "<p>📅 Aggiornato: ${NOW}</p>" >> listino_fastweb_view.html
+          echo "<p>🔹 PUN di riferimento: ${PUN} (€/MWh)</p>" >> listino_fastweb_view.html
+
+          echo "<hr><h3>Offerte Business</h3>" >> listino_fastweb_view.html
+          cat 'Fastweb Energia Business Flex _ Fastweb.html' >> listino_fastweb_view.html
+          cat 'Fastweb Energia Business Fix _ Fastweb.html' >> listino_fastweb_view.html
+
+          echo "<hr><h3>Offerte Residenziali</h3>" >> listino_fastweb_view.html
+          cat 'Fastweb Energia Flat Light _ Fastweb.html' >> listino_fastweb_view.html
+          cat 'Fastweb Energia Flat Full _ Fastweb.html' >> listino_fastweb_view.html
+          cat 'Fastweb Energia Flat Maxi _ Fastweb.html' >> listino_fastweb_view.html
+          cat 'Fastweb Energia Flex _ Fastweb.html' >> listino_fastweb_view.html
+          cat 'Fastweb Energia Fix _ Fastweb.html' >> listino_fastweb_view.html
+
+          echo "<hr><p style='font-size:12px;color:#666'>Pagina generata automaticamente. Fonti: pagine Fastweb ufficiali e PUN GME.</p>" >> listino_fastweb_view.html
+          echo "</body></html>" >> listino_fastweb_view.html
+
+      - name: 🚀 Commit e push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add listino_fastweb_view.html feed/pun_value.txt || true
+          git commit -m "🔄 Auto-update Fastweb feed $(date +'%d/%m/%Y %H:%M')" || echo "Nessuna modifica"
+          git push
