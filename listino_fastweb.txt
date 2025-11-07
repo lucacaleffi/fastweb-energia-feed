@@ -1,9 +1,8 @@
 📄 Generazione del listino Fastweb Energia (TXT)
 
 Listino Fastweb Energia
-Listino Fastweb Energia
-📅 Aggiornato: 06/11/2025 22:43
-🔹 PUN di riferimento: 000,00 (€/MWh)
+Listino Fastweb Energia – aggiornamento automatico
+📅 Aggiornato: 07/11/2025 00:05 &nbsp;•&nbsp; 🔹 PUN riferimento: 000,00 €/MWh
 Offerte Business
 
 
@@ -174,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -191,7 +190,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -1147,7 +1145,7 @@ Insieme, siamo futuro
 
 			
 
-				
+	_gaqw.push(['_trackEvent', 'Energia Biz', 'Entry', "OffertaShp", 0, true]);			
 
 
 
@@ -1345,6 +1343,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -1375,7 +1374,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -1384,8 +1384,9 @@ $(function(){
 else{return value+'0'}}},position:'right'}],grid:{tickColor:'#ff0000'}},},lineAtIndex:[1],plugins:[{labels:{},tooltip:!1,id:'hoverValue',afterDatasetsDraw:function(e){var t=e.ctx;e.data.datasets.forEach(function(e,t){})}}]});;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Bus/OEnergia/LuceFlex/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Bus/OEnergia/LuceFlex/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
+
 
 
 
@@ -1558,7 +1559,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -1575,7 +1576,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -2486,7 +2486,7 @@ Insieme, siamo futuro
 		
 			
 
-				
+	_gaqw.push(['_trackEvent', 'Energia Biz', 'Entry', "OffertaShp", 0, true]);			
 
 
 
@@ -2684,6 +2684,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -2714,7 +2715,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -2722,7 +2724,7 @@ $(function(){
 ;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Bus/OEnergia/LuceFix/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Bus/OEnergia/LuceFix/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
 
 
@@ -2897,7 +2899,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -2914,7 +2916,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -4296,6 +4297,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -4326,7 +4328,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -4356,8 +4359,9 @@ window.go_qltrx=function(){ try{(new g(100,"r","QSI_S_ZN_aWUJ7sru7T85dci","https
 ;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceLight/isResid/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceLight/isResid/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
+
 
 
 
@@ -4530,7 +4534,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -4547,7 +4551,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -5927,6 +5930,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -5957,7 +5961,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -5987,8 +5992,9 @@ window.go_qltrx=function(){ try{(new g(100,"r","QSI_S_ZN_aWUJ7sru7T85dci","https
 ;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceFull/isResid/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceFull/isResid/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
+
 
 
 
@@ -6161,7 +6167,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -6178,7 +6184,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -7561,6 +7566,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -7591,7 +7597,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -7621,8 +7628,9 @@ window.go_qltrx=function(){ try{(new g(100,"r","QSI_S_ZN_aWUJ7sru7T85dci","https
 ;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceMaxi/isResid/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceMaxi/isResid/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
+
 
 
 
@@ -7795,7 +7803,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -7812,7 +7820,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -9009,6 +9016,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -9039,7 +9047,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -9070,8 +9079,9 @@ window.go_qltrx=function(){ try{(new g(100,"r","QSI_S_ZN_aWUJ7sru7T85dci","https
 ;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceFlex/isResid/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceFlex/isResid/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
+
 
 
 
@@ -9244,7 +9254,7 @@ height="0" width="0" style="display:none;visibility:hidden" sandbox="allow-same-
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
 (function(w){
-	w._cookies = {"A":true,"F":true,"M":true};
+	w._cookies = {"A":true,"F":false,"M":false};
 	w.dataLayer=w.dataLayer||[];
 	w.dataLayer.push({cookies:w._cookies});
 	w._init_all=function(){
@@ -9261,7 +9271,6 @@ function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(
 })(window);
 _gaqw.init && _gaqw.init();
 window._gtmstart && _gtmstart();
-_init_all();
 
 
 
@@ -10404,6 +10413,7 @@ Insieme, siamo futuro
 
 
 function _gtag() { window.dataLayer=window.dataLayer||[]; window.dataLayer.push(arguments); }
+_gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
 $(function(){
 	var w = window, d = document;
 	$('body').append('');
@@ -10434,7 +10444,8 @@ $(function(){
 		$('.ck_if').height(h);
 				if (h!='100%') $('.ck_if').css('visibility','visible');
 	}
-	});
+			w._ckpanel();
+		});
 
 
 
@@ -10464,12 +10475,12 @@ window.go_qltrx=function(){ try{(new g(100,"r","QSI_S_ZN_aWUJ7sru7T85dci","https
 ;$(function(){var t=$('.formContatto');t.on('submit',function(e){if(document.getElementById('recptcha')){var a=grecaptcha.getResponse();if(a.length===0){e.preventDefault();t.find('.btn').toggleClass('btn_disabled',!1);document.getElementById('captchaError').style.display='block';return!1}
 else{t.find('.btn').toggleClass('btn_disabled',!0);document.getElementById('captchaError').style.display='none';return!0}};$('[name=flag_consenso]',this).val($('#consenso').is(':checked')?1:0)}).on('checked init.cmb',function(){var t=$(this).closest('.formContatto'),a=this,e=!0;c=$('[name]',t).trigger('check').each(function(){if($(this).data('valid')===!1){e=!1;$(a).data('field',this);return!1}});t.find('.btn').toggleClass('btn_disabled',!e)}).on('keyup focusout focusin check','[name="tel"]',function(t){var a=$(this).val(),e=!0,i='';if(e&&!(e=/^(0|3)/.test(a)))i='Il numero deve iniziare con 0 o 3';if(e&&!(e=/^(0[0-9]{4,11}|3[0-9]{8,9})$/.test(a)))i='Controlla la lunghezza del numero';$(this).data('valid',e);if(t.type=='focusin')$(this).removeClass('error valid');if(t.type=='focusout'&&a.length)$(this).toggleClass('error',!e).toggleClass('valid',!!e);if(t.type!=='check')$(this).trigger('checked');$('.validate[for="tel"]').html($(this).is('.error')?i:'')}).on('change check','[name="fascia_oraria"]',function(t){var e=$(this).val();$(this).data('valid',!!(e&&e.length));if(t.type!=='check')$(this).trigger('checked')}).on('click','.btn',function(){var t=$(this).closest('.formContatto');if(!$(this).is('.btn_disabled')){t.find('.btn').toggleClass('btn_disabled');if($('.holbox.gh').length){var a=$('.formContatto').serialize();$.ajax({type:'POST',url:'',data:a}).done(function(t){var e=JSON.parse(t);$('.holbox .withform').html(e.html);$('.holbox.gh').addClass('ghfull')})}
 else{t.submit()}}
-else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceFix/isResid/Offerta/';(function(){var e=1;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
+else{var e=$(t.data('field'));if(!e.is('select'))e.focus()};return!1}).trigger('init.cmb');if($('.label.hidden_m',t).is(':visible')){$('[name="fascia_oraria"]',t).prop('selectedIndex',1).change()};if(window.gapk)gapk.done(function(t){$('.formContatto [name=gapk]').val(t)})});;$(function(){$(document).on('click','.f_link_cookies',function(){_ckpanel(!0);return!1})});window.js_track_page='/Funnel_Acquisto/CPQ/scheda/Res/OEnergia/LuceFix/isResid/Offerta/';(function(){var e=0;function t(){var t=document,e=t.createElement('script'),i=!t.body?t.querySelector('head'):t.body;e.src='https://acsbapp.com/apps/app/dist/js/app.js';e.async=!0;e.onload=function(){acsbJS.init({statementLink:'',footerHtml:'AccessiWay',hideMobile:!1,hideTrigger:!1,language:'it',position:'left',leadColor:'#5b52cf',triggerColor:'#453db7',triggerRadius:'50%',triggerPositionX:'left',triggerPositionY:'bottom',triggerIcon:'people',triggerSize:'medium',triggerOffsetX:20,triggerOffsetY:20,mobile:{triggerSize:'medium',triggerPositionX:'left',triggerPositionY:'bottom',triggerOffsetX:10,triggerOffsetY:10,triggerRadius:'50%',},})};i.appendChild(e)};if(e){t()}
 else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='function')i();t()}})()}})();
 
 
 
-Pagina generata automaticamente. Fonti: pagine Fastweb ufficiali e PUN GME.
+Pagina generata automaticamente da GitHub Actions. Fonti: Fastweb.it (business e residenziale) + PUN GME. In caso di temporanea indisponibilità, i blocchi corrispondenti potrebbero non aggiornarsi in questo run.
 
 
-✅ Aggiornato automaticamente il 06/11/2025 – 23:04:08
+✅ Aggiornato automaticamente il 07/11/2025 – 14:18:40
