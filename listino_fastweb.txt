@@ -2,7 +2,7 @@
 
 Listino Fastweb Energia
 Listino Fastweb Energia – aggiornamento automatico
-📅 Aggiornato: 07/11/2025 15:29 &nbsp;•&nbsp; 🔹 PUN riferimento: 000,00 €/MWh
+📅 Aggiornato: 08/11/2025 15:24 &nbsp;•&nbsp; 🔹 PUN riferimento: 000,00 €/MWh
 Offerte Business
 
 
@@ -10483,4 +10483,4 @@ else{(function(){var e=window,i=e._ckstart;e._ckstart=function(){if(typeof i==='
 Pagina generata automaticamente da GitHub Actions. Fonti: Fastweb.it (business e residenziale) + PUN GME. In caso di temporanea indisponibilità, i blocchi corrispondenti potrebbero non aggiornarsi in questo run.
 
 
-✅ Aggiornato automaticamente il 08/11/2025 – 14:15:27
+✅ Aggiornato automaticamente il 09/11/2025 – 14:15:01
