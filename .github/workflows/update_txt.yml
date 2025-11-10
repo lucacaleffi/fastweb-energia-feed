@@ -1,4 +1,4 @@
-name: Aggiorna TXT leggibile per GPT
+name: Aggiorna listino TXT per GPT
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
     - cron: "0 14 * * *"  # ogni giorno alle 14:00 italiane
 
 permissions:
-  contents: write  # ✅ necessario per il push automatico
+  contents: write  # necessario per il push automatico
 
 jobs:
   convert:
@@ -19,30 +19,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-    - name: Crea file TXT leggibile per GPT
-      run: |
-        echo "📊 Listino Fastweb Energia (testo strutturato per GPT)" > listino_fastweb.txt
-        echo "ultimo_aggiornamento=$(TZ=Europe/Rome date +'%d/%m/%Y %H:%M')" >> listino_fastweb.txt
+      - name: Crea file TXT leggibile per GPT
+        run: |
+          echo "📊 Listino Fastweb Energia (testo strutturato per GPT)" > listino_fastweb.txt
+          echo "ultimo_aggiornamento=$(TZ=Europe/Rome date +'%d/%m/%Y %H:%M')" >> listino_fastweb.txt
 
-        # Estrai valori principali dal JSON o HTML se presenti
-        echo "pun=$(grep -oP '(?<=\"PUN\": )[^,]+' listino_fastweb_live.json)" >> listino_fastweb.txt
-        echo "fonte_pun=A2A" >> listino_fastweb.txt
+          # Estrai valori principali dal JSON o HTML se presenti
+          echo "pun=$(grep -oP '(?<=\"PUN\": )[^,]+' listino_fastweb_live.json)" >> listino_fastweb.txt
+          echo "fonte_pun=A2A" >> listino_fastweb.txt
 
-        # Business
-        echo "business_flex_spread=0.037" >> listino_fastweb.txt
-        echo "business_quota_mese=20" >> listino_fastweb.txt
-        echo "business_sconto_convergenza=-10" >> listino_fastweb.txt
+          # Business
+          echo "business_flex_spread=0.037" >> listino_fastweb.txt
+          echo "business_quota_mese=20" >> listino_fastweb.txt
+          echo "business_sconto_convergenza=-10" >> listino_fastweb.txt
 
-        # Residenziale
-        echo "res_light_eurokwh=0.45" >> listino_fastweb.txt
-        echo "res_light_euromese=35" >> listino_fastweb.txt
-        echo "res_full_eurokwh=0.41" >> listino_fastweb.txt
-        echo "res_full_euromese=39" >> listino_fastweb.txt
-        echo "res_maxi_eurokwh=0.39" >> listino_fastweb.txt
-        echo "res_maxi_euromese=43" >> listino_fastweb.txt
+          # Residenziale
+          echo "res_light_eurokwh=0.45" >> listino_fastweb.txt
+          echo "res_light_euromese=35" >> listino_fastweb.txt
+          echo "res_full_eurokwh=0.41" >> listino_fastweb.txt
+          echo "res_full_euromese=39" >> listino_fastweb.txt
+          echo "res_maxi_eurokwh=0.39" >> listino_fastweb.txt
+          echo "res_maxi_euromese=43" >> listino_fastweb.txt
 
-        # Riga di conferma
-        echo "✅ Aggiornato automaticamente il $(date '+%d/%m/%Y – %H:%M:%S')" >> listino_fastweb.txt
+          # Riga di conferma
+          echo "✅ Aggiornato automaticamente il $(date '+%d/%m/%Y – %H:%M:%S')" >> listino_fastweb.txt
 
       - name: Commit e Push file TXT
         env:
@@ -51,5 +51,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add listino_fastweb.txt
-          git commit -m "Auto-update TXT per GPT" || echo "Nessuna modifica da commitare"
+          git commit -m "Auto-update TXT per GPT" || echo "Nessuna modifica da committere"
           git push origin main
