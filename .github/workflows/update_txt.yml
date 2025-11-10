@@ -21,11 +21,28 @@ jobs:
 
       - name: Crea file TXT leggibile per GPT
         run: |
-          echo "📄 Generazione del listino Fastweb Energia (TXT)" > listino_fastweb.txt
-          echo "" >> listino_fastweb.txt
-          cat listino_fastweb_view.html | sed 's/<[^>]*>//g' >> listino_fastweb.txt
-          echo "" >> listino_fastweb.txt
-          echo "✅ Aggiornato automaticamente il $(date '+%d/%m/%Y – %H:%M:%S')" >> listino_fastweb.txt
+                echo "📊 Listino Fastweb Energia (testo strutturato per GPT)" > listino_fastweb.txt
+                echo "ultimo_aggiornamento=$(TZ=Europe/Rome date +'%d/%m/%Y %H:%M')" >> listino_fastweb.txt
+
+      # Estrai valori principali dal JSON o HTML se presenti
+                echo "pun=$(grep -oP '(?<=\"PUN\": )[^,]+' listino_fastweb_live.json)" >> listino_fastweb.txt
+                echo "fonte_pun=A2A" >> listino_fastweb.txt
+
+      # Business
+                echo "business_flex_spread=0.037" >> listino_fastweb.txt
+                echo "business_quota_mese=20" >> listino_fastweb.txt
+                echo "business_sconto_convergenza=-10" >> listino_fastweb.txt
+
+      # Residenziale
+                echo "res_light_eurokwh=0.45" >> listino_fastweb.txt
+                echo "res_light_euromese=35" >> listino_fastweb.txt
+                echo "res_full_eurokwh=0.41" >> listino_fastweb.txt
+                echo "res_full_euromese=39" >> listino_fastweb.txt
+                echo "res_maxi_eurokwh=0.39" >> listino_fastweb.txt
+                echo "res_maxi_euromese=43" >> listino_fastweb.txt
+
+      # Riga di conferma
+                echo "✅ Aggiornato automaticamente il $(date '+%d/%m/%Y – %H:%M:%S')" >> listino_fastweb.txt
 
       - name: Commit e Push file TXT
         env:
