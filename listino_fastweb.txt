@@ -1,5 +1,5 @@
 📊 Listino Fastweb Energia (testo strutturato per GPT)
-ultimo_aggiornamento=18/12/2025 15:20
+ultimo_aggiornamento=19/12/2025 15:19
 pun=0.106
 fonte_pun=A2A
 business_flex_spread=0.037
@@ -11,4 +11,4 @@ res_full_eurokwh=0.41
 res_full_euromese=39
 res_maxi_eurokwh=0.39
 res_maxi_euromese=43
-✅ Aggiornato automaticamente il 18/12/2025 – 14:20:58
+✅ Aggiornato automaticamente il 19/12/2025 – 14:19:57
